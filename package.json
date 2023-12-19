@@ -1,0 +1,11 @@
+{
+	"name": "homebrew-stuff",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "brew test-bot --only-cleanup-before && brew test-bot --only-setup && brew test-bot --only-tap-syntax"
+	},
+	"devDependencies": {
+		"@kitschpatrol/prettier-config": "^4.1.3"
+	}
+}
