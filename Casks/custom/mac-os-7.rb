@@ -6,6 +6,6 @@ cask "mac-os-7" do
   name "mac-os-7"
   desc "Mac OS 7 Emulator via BasiliskII"
   homepage "https://mendelson.org/macos9osx.html"
-  
+
   app "System761.app", target: "Mac OS 7.app"
 end

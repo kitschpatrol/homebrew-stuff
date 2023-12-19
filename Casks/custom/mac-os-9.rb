@@ -6,6 +6,6 @@ cask "mac-os-9" do
   name "mac-os-9"
   desc "Mac OS 9 Emulator via SheepShaver"
   homepage "https://mendelson.org/macos9osx.html"
-  
+
   app "Mac OS 9.app"
 end
