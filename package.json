@@ -1,11 +1,19 @@
 {
 	"name": "homebrew-stuff",
 	"type": "module",
-	"main": "index.js",
 	"scripts": {
-		"test": "brew test-bot --only-cleanup-before && brew test-bot --only-setup && brew test-bot --only-tap-syntax"
+		"format": "run-s --print-label format:*",
+		"format:1-prettier": "prettier-config --fix",
+		"format:2-rubocop": "brew style --quiet --fix kitschpatrol/stuff",
+		"test": "run-s --print-label test:*",
+		"test:1-dev-mode-on": "brew developer on",
+		"test:2-style": "brew style kitschpatrol/stuff",
+		"test:3-readall": "brew readall --aliases --os=all --arch=all kitschpatrol/stuff",
+		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff",
+		"test:5-dev-mode-on": "brew developer off"
 	},
 	"devDependencies": {
-		"@kitschpatrol/prettier-config": "^4.1.3"
+		"@kitschpatrol/prettier-config": "^4.1.3",
+		"npm-run-all": "^4.1.5"
 	}
 }

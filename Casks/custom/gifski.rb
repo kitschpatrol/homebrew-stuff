@@ -4,11 +4,12 @@ cask "gifski" do
 
   version "2.23.0"
   sha256 "f292b1359e25af0a5b08e620d3c3d319c085beb443d440fbbfc69c1da6126ef3"
+
   url "https://github.com/sindresorhus/meta/files/13539147/Gifski-#{version}-1692807940.zip",
       verified: "github.com/sindresorhus/"
   name "Gifski"
   desc "Gui for Gifski video to gif conversion library"
-  homepage "https://gif.ski"
+  homepage "https://gif.ski/"
 
   livecheck do
     url :url

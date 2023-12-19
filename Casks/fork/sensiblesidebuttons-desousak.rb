@@ -5,7 +5,7 @@ cask "sensiblesidebuttons-desousak" do
   url "https://github.com/Desousak/sensible-side-buttons/releases/download/#{version}/SensibleSideButtons.app.zip",
       verified: "github.com/Desousak/sensible-side-buttons/"
   name "Sensible Side Buttons"
-  desc "Turns mouse side navigation buttons into swipe gestures, with ability to enable / disable per-app"
+  desc "Turns mouse side navigation buttons into swipe gestures on a per-app basis"
   homepage "https://sensible-side-buttons.archagon.net/"
 
   app "SensibleSideButtons.app"

@@ -20,12 +20,12 @@ cask "rectangle-kitschpatrol" do
   uninstall quit: "com.ericmika.Rectangle"
 
   zap trash: [
-        "~/Library/Application Scripts/com.ericmika.RectangleLauncher",
-        "~/Library/Application Support/Rectangle",
-        "~/Library/Caches/com.ericmika.Rectangle",
-        "~/Library/HTTPStorages/com.ericmika.Rectangle",
-        "~/Library/Containers/com.ericmika.RectangleLauncher",
-        # Preserve preferences...
-        # "~/Library/Preferences/com.ericmika.Rectangle.plist",
-      ]
+    "~/Library/Application Scripts/com.ericmika.RectangleLauncher",
+    "~/Library/Application Support/Rectangle",
+    "~/Library/Caches/com.ericmika.Rectangle",
+    "~/Library/HTTPStorages/com.ericmika.Rectangle",
+    "~/Library/Containers/com.ericmika.RectangleLauncher",
+    # Preserve preferences...
+    # "~/Library/Preferences/com.ericmika.Rectangle.plist",
+  ]
 end
