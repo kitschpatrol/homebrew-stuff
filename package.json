@@ -2,15 +2,15 @@
 	"name": "homebrew-stuff",
 	"type": "module",
 	"scripts": {
-		"format": "run-s --print-label format:*",
+		"dev-mode-off": "brew developer off",
+		"dev-mode-on": "brew developer on",
+		"format": "run-s --print-label dev-mode-on format:* dev-mode-off",
 		"format:1-prettier": "prettier-config --fix",
 		"format:2-rubocop": "brew style --quiet --fix kitschpatrol/stuff",
-		"test": "run-s --print-label test:*",
-		"test:1-dev-mode-on": "brew developer on",
+		"test": "run-s --print-label dev-mode-on test:* dev-mode-off",
 		"test:2-style": "brew style kitschpatrol/stuff",
 		"test:3-readall": "brew readall --aliases --os=all --arch=all kitschpatrol/stuff",
-		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff",
-		"test:5-dev-mode-on": "brew developer off"
+		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff"
 	},
 	"devDependencies": {
 		"@kitschpatrol/prettier-config": "^4.1.3",
