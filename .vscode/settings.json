@@ -7,8 +7,7 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[ruby]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": false
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,

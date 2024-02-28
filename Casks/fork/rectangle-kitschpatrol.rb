@@ -23,8 +23,8 @@ cask "rectangle-kitschpatrol" do
     "~/Library/Application Scripts/com.ericmika.RectangleLauncher",
     "~/Library/Application Support/Rectangle",
     "~/Library/Caches/com.ericmika.Rectangle",
-    "~/Library/HTTPStorages/com.ericmika.Rectangle",
     "~/Library/Containers/com.ericmika.RectangleLauncher",
+    "~/Library/HTTPStorages/com.ericmika.Rectangle",
     # Preserve preferences...
     # "~/Library/Preferences/com.ericmika.Rectangle.plist",
   ]

@@ -12,7 +12,7 @@ cask "delicious-library" do
 
   zap trash: [
     "~/Library/Application Scripts/com.delicious-monster.library*",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.delicious-monster.library*.sfl2",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.delicious-monster.library*.sfl*",
     "~/Library/Containers/com.delicious-monster.library*",
   ]
 end

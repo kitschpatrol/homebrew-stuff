@@ -23,3 +23,5 @@ pnpm-lock.yaml
 package-lock.json
 
 # Customizations
+# Fights too much with brew style...
+/Casks/

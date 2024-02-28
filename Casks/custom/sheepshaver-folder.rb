@@ -14,5 +14,5 @@ cask "sheepshaver-folder" do
 
   suite "SheepShaver"
 
-  zap trash: ["/Applications/SheepShaver"]
+  zap trash: "/Applications/SheepShaver"
 end
