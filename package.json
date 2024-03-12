@@ -1,19 +1,43 @@
 {
 	"name": "homebrew-stuff",
 	"type": "module",
+	"description": "Kitschpatrol's Homebrew Tap. Odds and ends.",
+	"bugs": {
+		"email": "eric@ericmika.com",
+		"url": "https://github.com/kitschpatrol/mdat/issues"
+	},
+	"author": {
+		"email": "eric@ericmika.com",
+		"name": "Eric Mika",
+		"url": "https://ericmika.com"
+	},
+	"license": "UNLICENSED",
+	"private": true,
+	"packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2",
+	"engines": {
+		"node": ">=18.0.0",
+		"pnpm": ">=8.0.0"
+	},
+	"keywords": [
+		"homebrew"
+	],
 	"scripts": {
 		"dev-mode-off": "brew developer off",
 		"dev-mode-on": "brew developer on",
 		"format": "run-s --print-label dev-mode-on format:* dev-mode-off",
 		"format:1-prettier": "prettier-config --fix",
 		"format:2-rubocop": "brew style --quiet --fix kitschpatrol/stuff",
+		"lint": "cspell-config && prettier-config && remark . --quiet --frail",
+		"prepublishOnly": "echo \"Publishing is disabled.\" && exit 1",
 		"test": "run-s --print-label dev-mode-on test:* dev-mode-off",
 		"test:2-style": "brew style kitschpatrol/stuff",
 		"test:3-readall": "brew readall --aliases --os=all --arch=all kitschpatrol/stuff",
 		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff"
 	},
 	"devDependencies": {
-		"@kitschpatrol/prettier-config": "^4.4.2",
+		"@kitschpatrol/cspell-config": "^4.5.0",
+		"@kitschpatrol/prettier-config": "^4.5.0",
+		"@kitschpatrol/remark-config": "^4.5.0",
 		"npm-run-all": "^4.1.5"
 	}
 }
