@@ -1,6 +1,6 @@
 cask "mac-os-7" do
-  version "2023.10.28"
-  sha256 "e8f41916ae96eb6dfa19f188c654132548ac1ca0774508cb77e09f3d483c0d8b"
+  version "2024.03.03"
+  sha256 "48831519938456f0e442a3c4b5fe41331e8de476a052e1d65b83e6289da687c0"
 
   # Version at end of the url is a dirty hack to work around Homebrew's
   # insistence on skipping checksums on unversioned URLs. ಠ_ಠ
