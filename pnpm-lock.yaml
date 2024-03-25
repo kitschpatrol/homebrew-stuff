@@ -6,14 +6,14 @@ settings:
 
 devDependencies:
   '@kitschpatrol/cspell-config':
-    specifier: ^4.5.0
-    version: 4.5.0(cspell@8.6.0)
+    specifier: ^4.6.1
+    version: 4.6.1(cspell@8.6.0)
   '@kitschpatrol/prettier-config':
-    specifier: ^4.5.0
-    version: 4.5.0(prettier@3.2.5)(svelte@4.2.12)
+    specifier: ^4.6.1
+    version: 4.6.1(prettier@3.2.5)(svelte@4.2.12)
   '@kitschpatrol/remark-config':
-    specifier: ^4.5.0
-    version: 4.5.0(prettier@3.2.5)
+    specifier: ^4.6.1
+    version: 4.6.1(prettier@3.2.5)
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
@@ -389,12 +389,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kitschpatrol/cspell-config@4.5.0(cspell@8.6.0):
-    resolution: {integrity: sha512-MEZIJHGYRFn5GjhALJqv3modl7fQHD5HgSzeqY30OzY2/L8mPYKQSbvXinjfcwMsnVVXbYfOmlkgFqUN04F7xA==}
+  /@kitschpatrol/cspell-config@4.6.1(cspell@8.6.0):
+    resolution: {integrity: sha512-P4OfvgfPaGrtQrEobBOVLpBtWJe58mCJ/Cy+DShwEhCfw6UIdLOKZSwTaf5fVo3O9Lw7kiql1JZgaJPrf0kVOA==}
     engines: {node: '>=18.0.0', pnpm: '>=8.0.0'}
     hasBin: true
     peerDependencies:
-      cspell: ^8.1.3
+      cspell: ^8.6.0
     dependencies:
       '@pinojs/json-colorizer': 4.0.0
       cosmiconfig: 9.0.0
@@ -405,12 +405,12 @@ packages:
       - typescript
     dev: true
 
-  /@kitschpatrol/prettier-config@4.5.0(prettier@3.2.5)(svelte@4.2.12):
-    resolution: {integrity: sha512-eHJ5VmRbjRzWV2zoF2/om2VDwtWePoE+P9f9EqndMA+oww5bRRC1l9S3M01fKmiEStuSnsS5LdlSdD+stM+/LA==}
+  /@kitschpatrol/prettier-config@4.6.1(prettier@3.2.5)(svelte@4.2.12):
+    resolution: {integrity: sha512-KafcvQsZ8RQtNXgip04mL4AxZGepZcAI1gT/x6YNge0rfoXI23EFKinGbJZosidKL8HdPqTExsWfLHT8JWd3xQ==}
     engines: {node: '>=18.0.0', pnpm: '>=8.0.0'}
     hasBin: true
     peerDependencies:
-      prettier: ^3.0.0
+      prettier: ^3.2.5
     dependencies:
       '@pinojs/json-colorizer': 4.0.0
       '@prettier/plugin-php': 0.22.2(prettier@3.2.5)
@@ -445,8 +445,8 @@ packages:
       - typescript
     dev: true
 
-  /@kitschpatrol/remark-config@4.5.0(prettier@3.2.5):
-    resolution: {integrity: sha512-7ATVdbPRGwgoFmwPVIR0KyVSZbdLDVjKwRAvjmqJbmL+UvyS2zwz00OZ8sJtdWEj88gu56Nba44ihVa/vUZInA==}
+  /@kitschpatrol/remark-config@4.6.1(prettier@3.2.5):
+    resolution: {integrity: sha512-XkkH+NWpjfuyTabDzrOe+xModjztTGmzHeqr7laeAymSY5oohp6ab3774o6Hze5ycBIsuw0YzBquqSUafsr07A==}
     engines: {node: '>=18.0.0', pnpm: '>=8.0.0'}
     hasBin: true
     dependencies:
