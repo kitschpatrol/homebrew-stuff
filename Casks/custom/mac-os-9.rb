@@ -1,6 +1,6 @@
 cask "mac-os-9" do
-  version "2024.02.05"
-  sha256 "3834031596b0fb8edc3541a9d25990d5a79a139680018865892cdf8c5f4afe6d"
+  version "2024.04.09"
+  sha256 "3d3ec3060b9af89c2ad3664e0b715181998bfc3795c721850d4c9b1b474253d6"
 
   # Version at end of the url is a dirty hack to work around Homebrew's
   # insistence on skipping checksums on unversioned URLs. ಠ_ಠ
