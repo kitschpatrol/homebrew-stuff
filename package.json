@@ -13,10 +13,10 @@
 	},
 	"license": "UNLICENSED",
 	"private": true,
-	"packageManager": "pnpm@9.1.1",
+	"packageManager": "pnpm@9.4.0",
 	"engines": {
-		"node": ">=18.0.0",
-		"pnpm": ">=8.0.0"
+		"node": ">=22.0.0",
+		"pnpm": ">=9.0.0"
 	},
 	"keywords": [
 		"homebrew"
@@ -35,9 +35,9 @@
 		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff"
 	},
 	"devDependencies": {
-		"@kitschpatrol/cspell-config": "^4.6.3",
-		"@kitschpatrol/prettier-config": "^4.6.3",
-		"@kitschpatrol/remark-config": "^4.6.3",
+		"@kitschpatrol/cspell-config": "^4.7.2",
+		"@kitschpatrol/prettier-config": "^4.7.2",
+		"@kitschpatrol/remark-config": "^4.7.2",
 		"npm-run-all": "^4.1.5"
 	}
 }
