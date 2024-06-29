@@ -4,7 +4,7 @@ cask "delicious-library" do
 
   # Version at end of the url is a dirty hack to work around Homebrew's
   # insistence on skipping checksums on unversioned URLs. ಠ_ಠ
-  url "http://delicious-monster.com/downloads/DeliciousLibrary3.zip##{version}"
+  url "https://delicious-monster.com/downloads/DeliciousLibrary3.zip##{version}"
   name "Delicious Library"
   homepage "https://www.delicious-monster.com/"
 

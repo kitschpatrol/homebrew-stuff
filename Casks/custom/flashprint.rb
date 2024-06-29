@@ -1,16 +1,16 @@
 cask "flashprint" do
-  version "5.8.3"
-  sha256 "5bcc20a5fa84643b369a90a669c8399bfc23b24dd630926e3a59332a71c8a103"
+  version "5.8.5"
+  sha256 "b358dcb2a8c16fb0824591fe1a55f5fff68ee9debc0cd9167e75d2993719bf85"
 
   # Version at end of the url is a dirty hack to work around Homebrew's
   # insistence on skipping checksums on unversioned URLs. ಠ_ಠ
-  url "https://en.fss.flashforge.com/10000/software/f91bd24714e03006a0c064d626cfa699.zip##{version}"
+  url "https://en.fss.flashforge.com/10000/software/ff6b02b4efabd87c9e2c3a2d4db563f8.zip##{version}"
   name "FlashPrint"
   desc "Printing software for flashforge 3d-printers"
-  homepage "https://www.flashforge.com/product-detail/40"
+  homepage "https://industry.flashforge.com/product-detail/40"
 
   livecheck do
-    url "https://www.flashforge.com/download-center/63"
+    url "https://industry.flashforge.com/download-center/63"
     regex(/Flashprint#{version.major}_(\d+(?:\.\d+)+)/i)
   end
 
