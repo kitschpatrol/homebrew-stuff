@@ -43,5 +43,5 @@ There [doesn't seem to be a good way](https://github.com/Homebrew/legacy-homebre
 ## Taking sha256:
 
 ```sh
-shasum -a 256 ./YourApp.zip
+shasum -a 256 ./YourApp.zip | sed 's/ .*//' | pbcopy
 ```
