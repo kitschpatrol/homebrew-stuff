@@ -11,7 +11,7 @@
 		"name": "Eric Mika",
 		"url": "https://ericmika.com"
 	},
-	"license": "UNLICENSED",
+	"license": "MIT",
 	"private": true,
 	"packageManager": "pnpm@9.5.0",
 	"engines": {
