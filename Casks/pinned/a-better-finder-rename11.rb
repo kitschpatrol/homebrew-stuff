@@ -7,10 +7,7 @@ cask "a-better-finder-rename11" do
   desc "Renamer for files, music and photos"
   homepage "https://www.publicspace.net/ABetterFinderRename/"
 
-  livecheck do
-    url "https://www.publicspace.net/app/signed_abfr#{version.major}.xml"
-    strategy :sparkle, &:version
-  end
+  livecheck { skip "Legacy version" }
 
   auto_updates true
   depends_on macos: ">= :high_sierra"

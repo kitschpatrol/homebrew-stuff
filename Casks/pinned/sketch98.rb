@@ -15,10 +15,7 @@ cask "sketch98" do
 
     url "https://download.sketch.com/sketch-#{version.csv.first}-#{version.csv.second}.zip"
 
-    livecheck do
-      url "https://download.sketch.com/sketch-versions.xml"
-      strategy :sparkle
-    end
+    livecheck { skip "Legacy version" }
 
     depends_on macos: ">= :monterey"
   end
