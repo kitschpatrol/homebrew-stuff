@@ -19,15 +19,17 @@
 		"pnpm": ">=9.0.0"
 	},
 	"keywords": [
-		"homebrew"
+		"homebrew",
+		"tap"
 	],
 	"scripts": {
+		"clean": "rm -f pnpm-lock.yaml && git clean -fdX",
 		"dev-mode-off": "brew developer off",
 		"dev-mode-on": "brew developer on",
 		"format": "run-s --print-label dev-mode-on format:* dev-mode-off",
-		"format:1-prettier": "prettier-config --fix",
+		"format:1-shared-config": "shared-config --fix",
 		"format:2-rubocop": "rm -rf ./node_modules && brew style --quiet --fix kitschpatrol/stuff && pnpm install",
-		"lint": "cspell-config && prettier-config && remark . --quiet --frail",
+		"lint": "shared-config --lint",
 		"prepublishOnly": "echo \"Publishing is disabled.\" && exit 1",
 		"test": "run-s --print-label dev-mode-on test:* dev-mode-off",
 		"test:2-style": "rm -rf ./node_modules && brew style kitschpatrol/stuff && pnpm install",
@@ -35,9 +37,8 @@
 		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff"
 	},
 	"devDependencies": {
-		"@kitschpatrol/cspell-config": "^4.7.2",
-		"@kitschpatrol/prettier-config": "^4.7.2",
-		"@kitschpatrol/remark-config": "^4.7.2",
-		"npm-run-all": "^4.1.5"
+		"@kitschpatrol/shared-config": "^4.7.2",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^5.5.4"
 	}
 }

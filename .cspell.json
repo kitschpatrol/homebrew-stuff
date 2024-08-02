@@ -2,5 +2,6 @@
 	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
 	"import": "@kitschpatrol/cspell-config",
 	"allowCompoundWords": true,
-	"words": ["abfr", "desousak", "emaculation", "helpd", "mailarchiver", "ronaldpr"]
+	"words": ["abfr", "desousak", "emaculation", "helpd", "mailarchiver", "ronaldpr"],
+	"ignorePaths": []
 }
