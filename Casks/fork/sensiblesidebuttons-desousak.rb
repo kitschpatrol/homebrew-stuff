@@ -8,6 +8,11 @@ cask "sensiblesidebuttons-desousak" do
   desc "Turns mouse side navigation buttons into swipe gestures on a per-app basis"
   homepage "https://sensible-side-buttons.archagon.net/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "SensibleSideButtons.app"
 
   zap trash: "~/Library/Preferences/net.archagon.sensible-side-buttons.plist"
