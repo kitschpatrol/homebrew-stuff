@@ -6,12 +6,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-casks:
+  bump-homebrew-casks:
     runs-on: macos-latest
     steps:
-      - name: Update Homebrew casks
-        uses: eugenesvk/action-homebrew-bump-cask@3.8.4
+      - uses: kitschpatrol/github-action-homebrew-bump-cask@v3
         with:
-          token: ${{secrets.PERSONAL_ACCESS_TOKEN}}
-          tap: kitschpatrol/stuff
-          livecheck: true
+          tap: kitschpatrol/stuff # Bump all outdated casks in this tap
+          token: ${{secrets.PERSONAL_ACCESS_TOKEN}} # Required, custom GitHub access token with only the 'public_repo' scope enabled
+          livecheck: true # Need to set this input if want to use `brew livecheck`
