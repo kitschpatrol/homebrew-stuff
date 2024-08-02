@@ -4,10 +4,11 @@ cask "ungoogled-chromium-claudiodekker" do
   version "127.0.6533.72-1.1"
   sha256 arm:   "79e39609a064f2d1f4c0ba4c12c6a789acf767e18bdd95eea0e6c6fa9b06c90e",
          intel: "961eca774c83f619f784a49e8dc11be4aef676874002b7b47211cb22935f4a19"
+
   url "https://github.com/claudiodekker/ungoogled-chromium-macos/releases/download/#{version}/ungoogled-chromium_#{version}_#{arch}-macos-signed.dmg",
       verified: "github.com/claudiodekker/ungoogled-chromium-macos/"
   name "Ungoogled Chromium"
-  desc "Google Chromium, sans integration with Google signed and notarized by @claudiodekker."
+  desc "Ungoogled Chromium signed and notarized by @claudiodekker"
   homepage "https://ungoogled-software.github.io/"
 
   livecheck do
