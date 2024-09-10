@@ -50,6 +50,16 @@ shasum -a 256 ./YourApp.zip | sed 's/ .*//' | pbcopy
 brew bump --tap kitschpatrol/stuff
 ```
 
+### Testing livecheck
+
+For automated cask updates. Used by [github-action-homebrew-bump-cask](https://github.com/kitschpatrol/github-action-homebrew-bump-cask).
+
+````sh
+brew developer on
+brew livecheck --cask --quiet --full-name --json --tap=kitschpatrol/stuff; echo $?
+brew developer off
+```sh
+
 <!-- license -->
 
 ## License
@@ -57,3 +67,4 @@ brew bump --tap kitschpatrol/stuff
 [MIT](license.txt) © Eric Mika
 
 <!-- /license -->
+````
