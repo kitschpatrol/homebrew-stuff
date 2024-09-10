@@ -1,8 +1,8 @@
 cask "machato" do
-  version "1.6.2"
-  sha256 "bf43d7dc92e15196ab844d8e6b1e888b220b6f931c38741ba205824d28c43d3c"
+  version "1.9.4,31"
+  sha256 "5b8a15c88e801c7d13f6087ed579aa2808c07d30df57c77b017686f0b9a9dbe5"
 
-  url "https://machatoapp.github.io/Machato%20#{version.before_comma}.zip",
+  url "https://machatoapp.github.io/Machato%20#{version.csv.first}.zip",
       verified: "machatoapp.github.io/"
   name "Machato"
   desc "Native client for ChatGPT and other LLMs"
