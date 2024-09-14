@@ -1,19 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
-	"import": "@kitschpatrol/cspell-config",
 	"allowCompoundWords": true,
-	"words": [
-		"abfr",
-		"desousak",
-		"eloston",
-		"emaculation",
-		"helpd",
-		"Machato",
-		"machatoapp",
-		"mailarchiver",
-		"ronaldpr",
-		"rubocop",
-		"ungoogled"
-	],
-	"ignorePaths": []
+	"ignorePaths": [],
+	"import": "@kitschpatrol/cspell-config",
+	"words": ["machatoapp", "ungoogled", "eloston"]
 }
