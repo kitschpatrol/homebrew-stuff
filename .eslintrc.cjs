@@ -3,5 +3,12 @@
 module.exports = {
 	root: true,
 	extends: ['@kitschpatrol/eslint-config'],
-	// Overrides
+	overrides: [
+		{
+			files: ['README.md'],
+			rules: {
+				'unicorn/filename-case': 'off',
+			},
+		},
+	],
 }

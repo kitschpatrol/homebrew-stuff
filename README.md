@@ -22,6 +22,31 @@ Or `brew tap kitschpatrol/stuff` and then `brew install <formula>`.
 
 For help, see `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
 
+## Casks
+
+<!-- casks -->
+
+| Application                                                                | Description                                                                | Cask                                                                               | Type   |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------ |
+| [A Better Finder Rename](https://www.publicspace.net/ABetterFinderRename/) | Renamer for files, music and photos                                        | [a-better-finder-rename11](Casks/pinned/a-better-finder-rename11.rb)               | Pinned |
+| [Delicious Library](https://www.delicious-monster.com/)                    | Digital asset management                                                   | [delicious-library](Casks/custom/delicious-library.rb)                             | Custom |
+| [FlashPrint](https://industry.flashforge.com/product-detail/40)            | Slicer and print controller for Flashforge 3D printers                     | [flashprint](Casks/custom/flashprint.rb)                                           | Custom |
+| [Gifski](https://gif.ski/)                                                 | GUI for Gifski video to gif conversion library                             | [gifski](Casks/custom/gifski.rb)                                                   | Custom |
+| [mac-os-7](https://mendelson.org/macos9osx.html)                           | Classic Macintosh emulator via BasiliskII                                  | [mac-os-7](Casks/custom/mac-os-7.rb)                                               | Custom |
+| [mac-os-9](https://mendelson.org/macos9osx.html)                           | Classic Macintosh emulator via SheepShaver                                 | [mac-os-9](Casks/custom/mac-os-9.rb)                                               | Custom |
+| [Machato](https://machato.app/)                                            | Native client for ChatGPT and other LLMs                                   | [machato](Casks/custom/machato.rb)                                                 | Custom |
+| [Mail Archiver X](https://www.mothsoftware.com/)                           | Archive your email                                                         | [mail-archiver-x](Casks/custom/mail-archiver-x.rb)                                 | Custom |
+| [Photos Workbench](https://www.houdah.com/photosWorkbench/)                | Organize, rate, and compare your photos                                    | [photos-workbench](Casks/custom/photos-workbench.rb)                               | Custom |
+| [Rectangle](https://rectangleapp.com/)                                     | Move and resize windows using keyboard shortcuts or snap areas             | [rectangle-kitschpatrol](Casks/fork/rectangle-kitschpatrol.rb)                     | Fork   |
+| [Sensible Side Buttons](https://sensible-side-buttons.archagon.net/)       | Turns mouse side navigation buttons into swipe gestures on a per-app basis | [sensiblesidebuttons-desousak](Casks/fork/sensiblesidebuttons-desousak.rb)         | Fork   |
+| [SheepShaver](http://sheepshaver.cebix.net/)                               | Classic Macintosh emulator                                                 | [sheepshaver](Casks/custom/sheepshaver.rb)                                         | Custom |
+| [Sketch](https://www.sketch.com/)                                          | Digital design and prototyping platform                                    | [sketch98](Casks/pinned/sketch98.rb)                                               | Pinned |
+| [Speediness](https://sindresorhus.com/speediness)                          | Check your internet speed                                                  | [speediness](Casks/custom/speediness.rb)                                           | Custom |
+| [Type Fu](https://type-fu.com/)                                            | Vintage native version of the typing practice app                          | [type-fu](Casks/custom/type-fu.rb)                                                 | Custom |
+| [Ungoogled Chromium](https://ungoogled-software.github.io/)                | Ungoogled Chromium signed and notarized by @claudiodekker                  | [ungoogled-chromium-claudiodekker](Casks/fork/ungoogled-chromium-claudiodekker.rb) | Fork   |
+
+<!-- /casks -->
+
 ## Implementation notes
 
 ### Repository structure
@@ -54,11 +79,12 @@ brew bump --tap kitschpatrol/stuff
 
 For automated cask updates. Used by [github-action-homebrew-bump-cask](https://github.com/kitschpatrol/github-action-homebrew-bump-cask).
 
-````sh
-brew developer on
-brew livecheck --cask --quiet --full-name --json --tap=kitschpatrol/stuff; echo $?
-brew developer off
 ```sh
+brew developer on
+brew livecheck --cask --quiet --full-name --json --tap=kitschpatrol/stuff
+echo $?
+brew developer off
+```
 
 <!-- license -->
 
@@ -67,4 +93,3 @@ brew developer off
 [MIT](license.txt) © Eric Mika
 
 <!-- /license -->
-````
