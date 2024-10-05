@@ -1,6 +1,6 @@
 cask "photos-workbench" do
-  version "1.2.6"
-  sha256 "caf81155d1d2206218d0ad0c7227f861220c4d9a9e2673816806a21b31ffb725"
+  version "1.3.1"
+  sha256 "0c9c3544a942f5ae0b960bc25af108c967d7f72dfab36aaba1a950dd96f0e791"
 
   url "https://www.houdah.com/photosWorkbench/download_assets/PhotosWorkbench#{version}.zip"
   name "Photos Workbench"
