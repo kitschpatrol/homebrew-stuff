@@ -6,6 +6,7 @@ cask "delicious-library" do
   # insistence on skipping checksums on unversioned URLs. ಠ_ಠ
   url "https://delicious-monster.com/downloads/DeliciousLibrary3.zip##{version}"
   name "Delicious Library"
+  desc "Digital asset management"
   homepage "https://www.delicious-monster.com/"
 
   app "Delicious Library #{version.major}.app"

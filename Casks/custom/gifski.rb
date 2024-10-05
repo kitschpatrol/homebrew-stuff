@@ -8,7 +8,7 @@ cask "gifski" do
   url "https://github.com/sindresorhus/meta/files/13539147/Gifski-#{version}-1692807940.zip",
       verified: "github.com/sindresorhus/"
   name "Gifski"
-  desc "Gui for Gifski video to gif conversion library"
+  desc "GUI for Gifski video to gif conversion library"
   homepage "https://gif.ski/"
 
   livecheck do

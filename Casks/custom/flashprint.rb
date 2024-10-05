@@ -6,7 +6,7 @@ cask "flashprint" do
   # insistence on skipping checksums on unversioned URLs. ಠ_ಠ
   url "https://en.fss.flashforge.com/10000/software/f91bd24714e03006a0c064d626cfa699.zip##{version}"
   name "FlashPrint"
-  desc "Printing software for flashforge 3d-printers"
+  desc "Slicer and print controller for Flashforge 3D printers"
   homepage "https://industry.flashforge.com/product-detail/40"
 
   livecheck do
