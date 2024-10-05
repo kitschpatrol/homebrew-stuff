@@ -3,5 +3,5 @@
 	"allowCompoundWords": true,
 	"ignorePaths": [],
 	"import": "@kitschpatrol/cspell-config",
-	"words": ["machatoapp", "ungoogled", "eloston"]
+	"words": ["eloston", "machatoapp", "nkallen", "ungoogled"]
 }
