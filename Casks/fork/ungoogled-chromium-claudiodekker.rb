@@ -1,9 +1,9 @@
 cask "ungoogled-chromium-claudiodekker" do
   arch arm: "arm64", intel: "x86-64"
 
-  version "129.0.6668.70-1.1"
-  sha256 arm:   "4152bbe155b23741caf122cb24402c3d951127c6bb865078e11d907ff3a726af",
-         intel: "ed7c0b9c3b99396e7ccb084e737fa5b8c2c6ef39992a0d9d82127aff441b1820"
+  version "129.0.6668.89-1.1"
+  sha256 arm:   "466cfa9901284a63ea6714c49570b3846fed9bc58f3c4bd089559c1b5c0569ad",
+         intel: "4175716060e27859487582e6c54ab4831c99bca26f21b3829da46d9b0ed67e7a"
 
   url "https://github.com/claudiodekker/ungoogled-chromium-macos/releases/download/#{version}/ungoogled-chromium_#{version}_#{arch}-macos-signed.dmg",
       verified: "github.com/claudiodekker/ungoogled-chromium-macos/"
