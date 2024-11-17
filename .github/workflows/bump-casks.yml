@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: kitschpatrol/github-action-homebrew-bump-cask@v3
         with:
-          tap: kitschpatrol/stuff # Bump all outdated casks in this tap
+          tap: kitschpatrol/tap # Bump all outdated casks in this tap
           token: ${{secrets.PERSONAL_ACCESS_TOKEN}} # Required, custom GitHub access token with only the 'public_repo' scope enabled
           livecheck: true # Need to set this input if want to use `brew livecheck`

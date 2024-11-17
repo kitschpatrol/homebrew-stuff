@@ -1,5 +1,5 @@
 {
-	"name": "homebrew-stuff",
+	"name": "homebrew-tap",
 	"type": "module",
 	"description": "Kitschpatrol's Homebrew Tap. Odds and ends.",
 	"bugs": {
@@ -28,13 +28,13 @@
 		"dev-mode-on": "brew developer on",
 		"format": "run-s --print-label dev-mode-on format:* dev-mode-off",
 		"format:1-shared-config": "shared-config --fix",
-		"format:2-rubocop": "rm -rf ./node_modules && brew style --quiet --fix kitschpatrol/stuff && pnpm install",
+		"format:2-rubocop": "rm -rf ./node_modules && brew style --quiet --fix kitschpatrol/tap && pnpm install",
 		"lint": "shared-config --lint",
 		"prepublishOnly": "echo \"Publishing is disabled.\" && exit 1",
 		"test": "run-s --print-label dev-mode-on test:* dev-mode-off",
-		"test:2-style": "rm -rf ./node_modules && brew style kitschpatrol/stuff && pnpm install",
-		"test:3-readall": "brew readall --aliases --os=all --arch=all kitschpatrol/stuff",
-		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/stuff"
+		"test:2-style": "rm -rf ./node_modules && brew style kitschpatrol/tap && pnpm install",
+		"test:3-readall": "brew readall --aliases --os=all --arch=all kitschpatrol/tap",
+		"test:4-audit": "brew audit --except=installed --tap=kitschpatrol/tap"
 	},
 	"devDependencies": {
 		"@kitschpatrol/shared-config": "^4.7.12",
