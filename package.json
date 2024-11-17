@@ -2,10 +2,9 @@
 	"name": "homebrew-tap",
 	"type": "module",
 	"description": "Kitschpatrol's Homebrew Tap. Odds and ends.",
-	"bugs": {
-		"email": "eric@ericmika.com",
-		"url": "https://github.com/kitschpatrol/mdat/issues"
-	},
+	"repository": "github:kitschpatrol/homebrew-tap",
+	"homepage": "https://github.com/kitschpatrol/homebrew-tap",
+	"bugs": "https://github.com/kitschpatrol/homebrew-tap/issues",
 	"author": {
 		"email": "eric@ericmika.com",
 		"name": "Eric Mika",
@@ -20,7 +19,8 @@
 	},
 	"keywords": [
 		"homebrew",
-		"tap"
+		"tap",
+		"cask"
 	],
 	"scripts": {
 		"clean": "git rm -f pnpm-lock.yaml ; git clean -fdX",
