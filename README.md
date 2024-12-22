@@ -29,6 +29,7 @@ For help, see `brew help`, `man brew` or check [Homebrew's documentation](https:
 | Application                                                                | Description                                                                | Cask                                                                       | Type   |
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------ |
 | [A Better Finder Rename](https://www.publicspace.net/ABetterFinderRename/) | Renamer for files, music and photos                                        | [a-better-finder-rename11](Casks/pinned/a-better-finder-rename11.rb)       | Pinned |
+| [Acorn](https://flyingmeat.com/acorn/)                                     | Image editor focused on simplicity                                         | [acorn8](Casks/custom/acorn8.rb)                                           | Custom |
 | [FlashPrint](https://industry.flashforge.com/product-detail/40)            | Slicer and print controller for Flashforge 3D printers                     | [flashprint](Casks/custom/flashprint.rb)                                   | Custom |
 | [Gifski](https://gif.ski/)                                                 | GUI for Gifski video to gif conversion library                             | [gifski](Casks/custom/gifski.rb)                                           | Custom |
 | [mac-os-7](https://mendelson.org/macos9osx.html)                           | Classic Macintosh emulator via BasiliskII                                  | [mac-os-7](Casks/custom/mac-os-7.rb)                                       | Custom |
@@ -52,7 +53,7 @@ For help, see `brew help`, `man brew` or check [Homebrew's documentation](https:
 
 Originally based on [`brew tap-new`](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md).
 
-`Casks/custom` - Casks not available elsewhere
+`Casks/custom` - Casks or cask versions not available elsewhere
 
 `Casks/fork` - Forks of casks otherwise available in [`homebrew/core`](https://github.com/Homebrew/homebrew-core)
 
