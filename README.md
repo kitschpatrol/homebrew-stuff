@@ -86,6 +86,12 @@ echo $?
 brew developer off
 ```
 
+To check the "latest" version returned by an individual cask:
+
+```sh
+brew livecheck --debug --cask ./path/to/cask.rb
+```
+
 <!-- license -->
 
 ## License
